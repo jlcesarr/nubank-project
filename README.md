@@ -17,7 +17,7 @@ Wireframe Hero - Apresentação
 
 ## Aprendizados
 
-- Criação de bibliotecas próprias para espaçamento entre elementos, responsividade de elementos e tipografia
+- Criação de bibliotecas próprias com SASS para espaçamento entre elementos, responsividade de elementos e tipografia
 - Animações de SVG's
 - Manipulação do DOM com JS de acordo com a interação do usuário
 - Dicas de UX (criação de interatividades nos elementos, aumento do box model dos links e etc)
@@ -25,6 +25,6 @@ Wireframe Hero - Apresentação
 - Dicas de otimização das animações e assets
 ## Stack utilizada
 
-HTML, CSS e JS (SwiperJS e AOS)
+HTML, CSS (SASS) e JS (SwiperJS e AOS)
 
 
