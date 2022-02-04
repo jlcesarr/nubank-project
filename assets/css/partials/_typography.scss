@@ -1,0 +1,81 @@
+//  Typography of project
+@mixin typeface-1($size, $device: desktop) {
+    font-family: "Sora", sans-serif;
+    // H1
+    @if $device==desktop and $size==h1 {
+        font-size: 64px;
+        line-height: 100%;
+    }
+    @else if $device==mobile and $size==h1 {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    // H2
+    @if $device==desktop and $size==h2 {
+        font-size: 52px;
+        line-height: 110%;
+        font-weight: 900;
+    }
+    @else if $device==mobile and $size==h2 {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    // H3
+    @if $device==desktop and $size==h3 {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    @else if $device==mobile and $size==h3 {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    // H4 
+    @if $device==desktop and $size==h4 {
+        font-size: 24px;
+        line-height: 130%;
+    }
+    @else if $device==mobile and $size==h4 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    // H5 
+    @if $device==desktop and $size==h5 {
+        font-size: 18px;
+        line-height: 140%;
+    }
+    @else if $device==mobile and $size==h5 {
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+@mixin typeface-2($size: p2, $device: desktop) {
+    font-family: "Source Sans Pro", sans-serif;
+    // P1
+    @if $device==desktop and $size==p1 {
+        font-size: 24px;
+        line-height: 130%;
+    }
+    @else if $device==mobile and $size==p1 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    // P2
+    @if $device==desktop and $size==p2 {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    @else if $device==mobile and $size==p2 {
+        font-size: 14px;
+        line-height: 150%;
+    }
+    // P3
+    @if $device==desktop and $size==p3 {
+        font-size: 14px;
+        line-height: 150%;
+    }
+    @else if $device==mobile and $size==p3 {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}

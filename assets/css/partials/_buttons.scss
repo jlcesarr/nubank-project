@@ -1,0 +1,64 @@
+a {
+    text-decoration: none;
+    @include typeface-2(p2, desktop);
+    color: $black-normal;
+    transition: .5s ease;
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.login-link {
+    z-index: 800;
+}
+
+.btn {
+    background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
+    border-radius: 16px;
+    padding: 12px 32px;
+    color: $white-light;
+    transition: .5s ease;
+    box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 4px 25px -10px rgba(252, 189, 56, 0.3);
+    }
+}
+
+.link {
+    display: inline-block;
+    color: $primary-normal;
+    background-image: url('../svg/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    font-size: 18px;
+    padding: 16px 16px 16px 40px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 75%;
+        transition: .5s ease;
+        border-radius: 2px;
+        height: 2px;
+        background-color: $secondary-light;
+        width: 0%;
+    }
+    &:hover {
+        opacity: 0.8;
+        padding-left: 64px;
+        background-position: 8px 50%;
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.app-btn {
+    transition: .8s cubic-bezier(1, .01, .35, .89);
+    cursor: pointer;
+    &:hover {
+        filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)) drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+    }
+}

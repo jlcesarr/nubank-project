@@ -1,0 +1,100 @@
+$spacing: 8px,
+16px,
+48px,
+72px,
+128px;
+$newSpacing: 8px,
+16px,
+24px,
+32px,
+40px,
+48px,
+56px,
+64px,
+72px,
+128px;
+// MARGIN SPACING'S
+$i: 0;
+@each $v in $spacing {
+    $i: $i+1;
+    .m-#{$i} {
+        margin: $v;
+    }
+    .mt-#{$i} {
+        margin-top: $v;
+    }
+    .mr-#{$i} {
+        margin-right: $v;
+    }
+    .mb-#{$i} {
+        margin-bottom: $v;
+    }
+    .ml-#{$i} {
+        margin-left: $v;
+    }
+    .mtr-#{$i} {
+        margin-top: $v;
+        margin-right: $v;
+    }
+    .mrb-#{$i} {
+        margin-right: $v;
+        margin-bottom: $v;
+    }
+    .mbl-#{$i} {
+        margin-bottom: $v;
+        margin-left: $v;
+    }
+    .my-#{$i} {
+        margin-top: $v;
+        margin-bottom: $v;
+    }
+    .mx-#{$i} {
+        margin-left: $v;
+        margin-right: $v;
+    }
+}
+
+// ==================================================================
+// ==================================================================
+// ==================================================================
+// ==================================================================
+// PADDING SPACING'S
+$i: 0;
+@each $v in $spacing {
+    $i: $i+1;
+    .p-#{$i} {
+        padding: $v;
+    }
+    .pt-#{$i} {
+        padding-top: $v;
+    }
+    .pr-#{$i} {
+        padding-right: $v;
+    }
+    .pb-#{$i} {
+        padding-bottom: $v;
+    }
+    .pl-#{$i} {
+        padding-left: $v;
+    }
+    .ptr-#{$i} {
+        padding-top: $v;
+        padding-right: $v;
+    }
+    .prb-#{$i} {
+        padding-right: $v;
+        padding-bottom: $v;
+    }
+    .px-#{$i} {
+        padding-left: $v;
+        padding-right: $v;
+    }
+    .pbl-#{$i} {
+        padding-top: $v;
+        padding-left: $v;
+    }
+    .py-#{$i} {
+        padding-top: $v;
+        padding-bottom: $v;
+    }
+}

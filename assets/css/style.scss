@@ -1,0 +1,119 @@
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
+
+/*
+    RESET
+*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; // SUAVIZAR SCROLL
+}
+
+body {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: $white-normal;
+}
+
+svg,
+img {
+    display: block;
+    width: 100%;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+@import "partials/menu";
+@import "partials/swiper";
+@import "partials/icons";
+@import "partials/footer";
+@import "partials/animations";
+h1 {
+    color: $black-normal;
+    @include typeface-1(h1, desktop);
+    @include responsive(s) {
+        @include typeface-1(h1, mobile);
+    }
+}
+
+h2 {
+    color: $black-normal;
+    @include typeface-1(h2, desktop);
+    @include responsive(s) {
+        @include typeface-1(h2, mobile);
+    }
+}
+
+h3 {
+    color: $black-normal;
+    @include typeface-1(h3, desktop);
+    @include responsive(s) {
+        @include typeface-1(h3, mobile);
+    }
+}
+
+h4 {
+    color: $black-normal;
+    @include typeface-1(h4, desktop);
+    @include responsive(s) {
+        @include typeface-1(h4, mobile);
+    }
+}
+
+h5 {
+    color: $black-normal;
+    text-transform: uppercase;
+    background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include typeface-1(h5, desktop);
+    @include responsive(s) {
+        @include typeface-1(h5, mobile);
+    }
+}
+
+p {
+    color: $gray-3;
+    @include typeface-2(p2, desktop);
+    @include responsive(s) {
+        @include typeface-2(p2, mobile)
+    }
+}
+
+.bold {
+    font-weight: bold;
+    color: $black-normal;
+}
+
+strong {
+    color: $black-normal;
+    @include typeface-2(p2, desktop);
+    @include responsive(s) {
+        @include typeface-2(p2, mobile)
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.weight-light {
+    font-weight: 300;
+}
