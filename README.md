@@ -6,7 +6,7 @@ Projeto de redesign da interface do nubank, desde o UI Design até a codificaç�
 Este é um dos projetos do curso [FrontPush](https://frontpush.com.br/).
 
 
-Deploy: [Nubank Project]()
+Deploy (Netlify): [Nubank Project](https://nubank-project.netlify.app/)
 
 
 ## Screenshots
